@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata_dan_Feedback</title>
+</head>
+<body>
+    <h1>Biodata Saya</h1>
+    <table border="1"><thead>
+        <tr>
+            <th>Nama</th>
+            <th>Tempat/Tanggal Lahir</th>
+            <th>Alamat</th>
+            <th>No.Telepon</th>
+        </tr>
+    </thead>
+ <tbody>
+        <tr>
+            <td>Adellia Nanda Putri</td>
+            <td>Nganjuk, 1 April 2008</td>
+            <td>Ds. Mungkung, Kec. Rejoso, Kab. Nganjuk</td>
+            <td>0895-3147-7054</td>
+ </tr>
+</tbody>
+    </table>
+    <hr>
+    <h1>Formulir Feedback</h1>
+    <form action="/submit-form" method="post">
+    <label for="Nama"><strong>Nama Lengkap:</strong> </label><br>
+    <input type="text" id="Nama" name="Nama" placeholder="Masukkan Nama Anda"> <br><br>
+
+    <label for="email"><strong>Email:</strong></label><br>
+    <input type="email" id="email" name="email" placeholder="contoh@domain.com"><br><br>
+
+    <label for="komentar/saran"><strong>Komentar/Saran Anda:</strong></label><br>
+    <textarea id="komentar/saran" name="komentar/saran" rows="4" cols="50" placeholder="Tulis Komentar/Saran Anda Disini"></textarea><br><br>
+     
+    <label for="Kepuasan">Apakah Anda puas dengan materi ini?</label><br>
+    <input type="radio" id="Ya" name="Apakah Anda puas dengan materi ini?" value="Ya">
+    <label for="Ya">Ya</label><br>
+    <input type="radio" id="Tidak" name="Apakah Anda puas dengan materi ini?" value="Tidak">
+    <label for="Tidak">Tidak</label><br>
+
+    <label for="Topik">Topik yang ingin dipelajari selanjutnya</label><br>
+    <input type="checkbox" id="coding" name="Topik yang ingin dipelajari selanjutnya[]" value="coding">
+    <label for="coding">Coding</label><br>
+    <input type="checkbox" id="desain" name="Topik yang ingin dipelajari selanjutnya[]" value="desain">
+    <label for="desain">Desain</label><br>
+    <input type="checkbox" id="animasi 3d" name="Topik yang ingin dipelajari selanjutnya[]" value="animasi 3d">
+    <label for="animasi 3d">Animasi 3d</label><br><br>
+    <input type="submit" value="Kirim Feedback">
+</form>
+</body>
+</html>
